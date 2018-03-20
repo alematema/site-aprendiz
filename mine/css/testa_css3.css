@@ -1,0 +1,35 @@
+.container{
+    
+    background-color: #4256f4;
+    width: 50%;
+    height: 30rem;
+    position: relative;
+           
+}
+
+
+.borda-redonda{
+    
+    background-color: aliceblue;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top:5rem;
+    left: 5rem;
+    border-radius: 1.5rem;
+    transform: rotate(30deg) scale(1.2) skew(20deg);
+    -webkit-transform: rotate(30deg) scale(1.2) skew(20deg);
+    
+}
+
+.duas-bordas-redondas{
+    
+    background-color: aliceblue;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top:5rem;
+    left: 17rem;
+    border-radius: 2rem 0;
+    
+}

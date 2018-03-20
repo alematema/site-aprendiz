@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style> 
+        div {
+
+            width: 4em;
+            height: 1.9em;
+            transition: width 0.3s, height 0.5s;
+            border-radius: 10px;
+            position: absolute;
+            top:1.5em;
+            left: 1.5em;
+
+        }
+
+
+        div:hover {
+            width: 90%;
+            height: 1.9em;
+        }
+
+        .main {
+            border-radius: 5px;
+            width: 1.3em;
+            font-size: 2.1em;
+            color: white;
+            text-align: left;
+            padding-top: 0.17em;
+            padding-left: 0.17em;
+            background-color: dodgerblue;
+            position: relative;
+            
+        }
+
+        .main:hover{
+            
+            text-align: left;
+            padding-top: 0.17em;
+            padding-left: 0.17em;
+            position: absolute;
+            
+
+        }
+        .main:hover .input-pesquisar{
+            visibility: visible; 
+            opacity: 1;
+        }
+
+        .secundario1{
+            background-color: green;
+        }.secundario2{
+            background-color: skyblue;
+        }.secundario3{
+            background-color: violet;
+        }
+        
+        a{
+            color:white;
+        }
+
+        .input-pesquisar{
+            
+            transition: opacity 6s;
+            
+            position: absolute;
+            left: 2.95em;   
+            bottom: 1.1em;
+            background-color: whitesmoke;
+            width: 93%;
+            border-radius: 10px;
+            color: black;
+            font-size: 0.6em;
+            box-shadow: 0 0 5px 2px white;
+            visibility: hidden;
+            opacity: 0 ;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+
+        <div class='menu main'> &#128269;
+    
+    
+                <input class="input-pesquisar" type="text">
+    
+            
+    
+        </div>
+
+
+<!--
+        <div class='menu secundario1'></div>
+        <div class='menu secundario2'></div>
+        <div class='menu secundario3'></div>
+
+
+        <p><a>&#9776;</a></p>
+            <p><a>&#9776;</a></p>
+            <p><a>&#9776;</a></p>
+            <p><a>&#9776;</a></p>
+
+-->
+
+
+</body>
+</html>

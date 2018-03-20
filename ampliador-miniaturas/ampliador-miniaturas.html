@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="css/box-shadow-css.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+        
+        <script>
+        
+            var containerCss='NORMAL';
+            var zoomedImg = 'imagens/gitbaby.png'; 
+            var imgClicada;
+            
+            function mudaBoxCss(){
+                
+                document.getElementById("container-master").className = 'container-mouse-over';
+                document.getElementById('img-zoomed').className='img-low-opacity';
+                
+            }
+            
+            function mudaBoxCssNormal(){
+                
+                document.getElementById("container-master").className = 'container';
+                document.getElementById('img-zoomed').className='img-big-opacity';
+                
+            }
+            
+            function destacaImagem(img){
+                    
+                img.className='img-destacada';
+                document.getElementById('img-zoomed').src=img.src;
+                document.getElementById('img-zoomed').className='img-no-opacity';
+                
+            }
+            
+            function normalizaImagem(img){
+
+                
+                img.className='img-normal';
+                
+                document.getElementById('img-zoomed').src=zoomedImg;
+                
+                if(img == imgClicada) img.className='img-clicada'
+                
+                
+            }
+            
+            function zoom(img){
+                
+                zoomedImg = img.src;
+                document.getElementById('img-zoomed').src=zoomedImg;
+                normalizaImagem(img);
+                img.className='img-clicada';
+                if(imgClicada !== undefined) imgClicada.className='img-normal';
+                imgClicada = img;
+                
+            }
+        
+        </script>
+    </head>
+
+    <div id="container-master" class="container" >
+    
+        
+        <div class="img-container">
+        
+            <ul>
+            
+                <li><img class="img-normal" onmouseover="destacaImagem(this)" onmouseout="normalizaImagem(this)" src="imagens/gitbaby.png" onclick="zoom(this)"></li>
+                <li><img class="img-normal" onmouseover="destacaImagem(this)" onmouseout="normalizaImagem(this)" src="imagens/icon-spring-boot.svg" onclick="zoom(this)"></li>
+                <li><img class="img-normal" onmouseover="destacaImagem(this)" onmouseout="normalizaImagem(this)" src="imagens/simulador_mini.png" onclick="zoom(this)"></li>
+                <li><img class="img-normal" onmouseover="destacaImagem(this)" onmouseout="normalizaImagem(this)" src="imagens/angular-icon.svg" onclick="zoom(this)"></li>
+                <li><img class="img-normal" onmouseover="destacaImagem(this)" onmouseout="normalizaImagem(this)" src="imagens/node.png" onclick="zoom(this)"></li>
+                <li><img class="img-normal" onmouseover="destacaImagem(this)" onmouseout="normalizaImagem(this)" src="imagens/postman_icon.png" onclick="zoom(this)"></li>
+                
+                
+                
+            </ul>    
+        
+        
+        </div>
+        
+        <div  class="img-zoom-container">
+        
+            <img id="img-zoomed" class="img-no-opacity" src="imagens/gitbaby.png">
+        
+        </div>
+        
+    
+    </div>
+    
+
+</html>

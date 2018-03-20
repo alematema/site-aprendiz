@@ -1,0 +1,79 @@
+<style>
+
+    table{
+         /*background: linear-gradient(to top ,yellow, orange, green);*/
+    }
+    td{
+        border: 2px solid black;
+        text-align: center;
+       
+    }
+    
+    td:hover{
+        background: linear-gradient(to right ,white, green);
+        box-shadow: 0 0 3px 1px lightgreen;
+        border: none;
+    }
+
+</style>
+
+<table>
+    <tr>
+        <td rowspan="2" >Coluna da esquerda</td>
+        <td>Coluna da direita</td>
+    </tr>
+    <tr>
+        <td>Coluna da direita</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td colspan="2">Grande</td>
+    </tr>
+    <tr>
+        <td>Pequena</td>
+        <td>Pequena</td>
+    </tr>
+</table>
+
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">
+                <h1>Blog do Luiz</h1>
+                <p>Código e afins</p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <h2>Últimos artigos</h2>
+                <h3>Testes antes ou depois?</h3>
+                <p>...</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                &copy; Luiz 2010
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,41 @@
+.citacao-bio {
+    background-color: #D9E5E3;
+    border: .5em solid #C2CCCA;
+    padding: 1em;
+    margin: 1em 2em;
+    width: 30ch;
+    box-sizing: border-box;
+}
+
+.citacao-bio:nth-of-type(odd){
+    float: left;
+    margin-left: 0;
+}
+.citacao-bio:nth-of-type(even){
+    float: right;
+    margin-right: 0;
+}
+
+.citacao-bio:hover,
+.citacao-bio:focus{
+    /* efeito modal */
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75); 
+}
+
+.citacao-bio:nth-of-type(odd):hover,
+.citacao-bio:nth-of-type(odd):focus
+{
+    /*aumentada e rotacionaa para direita*/
+    transform: scale(1.2) rotate(5deg);;
+}
+
+
+.citacao-bio:nth-of-type(even):hover,
+.citacao-bio:nth-of-type(even):focus
+{
+    /*aumentada e rotacionaa para esquerda*/
+    transform: scale(1.2) rotate(-5deg);;
+    
+}
+
+

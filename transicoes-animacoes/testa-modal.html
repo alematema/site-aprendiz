@@ -1,0 +1,39 @@
+<div>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita neque laboriosam maxime nam ratione architecto voluptatibus, illo quis necessitatibus rem! Ullam veniam voluptatum et reprehenderit voluptatibus totam quibusdam reiciendis commodi.
+    <a href="https://www.google.com.br">google</a>
+  </div>
+
+  <div class="backdrop">
+      <div class="modal">
+          meu conteudo
+           <a href="https://www.google.com.br">google</a>
+  </div>
+      </div>
+  </div>
+
+<style>
+
+    .backdrop{
+        width: 100%;
+        height: 100vh; /* ou 100% */
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.5);
+
+        /* abaixo, alinhamento ao centro com flexbox com os prefixos dos navegadores. */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal{
+        
+        width: 300px;
+        background: #fff;
+        padding: 20px 15px;
+        border-radius: 5px;
+    }
+
+</style>

@@ -1,0 +1,1 @@
+caniuse.com : ferramenta funcionalidades beta para saber como cada navegador está implementando um funcionalidade

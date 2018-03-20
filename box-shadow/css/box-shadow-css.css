@@ -1,0 +1,52 @@
+body{
+    background-color: skyblue;
+}
+.container {
+    
+    background-color: white;
+    width: 40em;
+    height: 30em;
+    margin-left:5em;
+    margin-top: 5em;
+    box-shadow: 0 0 0 6px black, 
+                0 0 0 12px skyblue, 
+                0 0 0 18px black, 
+                0 0 0 24px skyblue  , 
+                0 0 0 30px black;
+    
+
+    
+}
+
+<div style="
+    width: 25%;
+    background-color: #FFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
+    padding: 5%;
+    text-align: center;
+    /* font-size: 2em; */
+    height: 30%;
+">
+Parabéns!!! Você foi premiado com uma formação Java. 
+    Clique <a style="    text-decoration: underline;
+    color: blue;
+          " href="">aqui</a> para receber.
+
+</div>
+
+    width: 40%;
+    background-color: #FFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
+    padding: 10% 3%;
+    text-align: center;
+    font-size: 2em;

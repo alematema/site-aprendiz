@@ -1,0 +1,141 @@
+body{
+    background-color: skyblue;
+}
+.container {
+    
+    background-color: white;
+    width: 40em;
+    height: 30em;
+    margin-left:5em;
+    margin-top: 5em;
+    box-shadow: 0 0 10px 5px white;
+    border-radius: 25px 25px;
+    position: relative
+    
+}
+
+.container-mouse-over {
+    
+    background-color: white;
+    width: 40em;
+    height: 30em;
+    margin-left:5em;
+    margin-top: 5em;
+    box-shadow: 0 0 10px 5px white;
+    border-radius: 25px 25px;
+   
+    position: relative
+    
+}
+
+
+.img-container{
+    
+    width: 15%;
+    height: 95%;
+    box-shadow: 0 0 1px 1px #000;
+    border-radius: 25px 25px;
+    background-color: white;
+  
+    position: absolute;
+    margin: 1%;
+    margin-right: 0;
+
+        
+}
+
+.img-normal {
+    
+    width: 3em;
+    height: 3em;
+    cursor: zoom-in;
+    box-shadow:none;
+    border-radius:15px 15px;
+    
+}
+
+.img-destacada {
+    
+    width: 5em;
+    height: 5em;
+    cursor: zoom-in;
+    box-shadow: 3px 2px 5px 1px dodgerblue;
+    border-radius: 10px 10px 1px;
+}
+
+.img-clicada{
+    
+    width: 3em;
+    height: 3em;
+    cursor: zoom-in;
+    box-shadow: 0px 0px 5px 4px tomato;
+    border-radius:15px 15px;
+    
+}
+
+
+
+.img-container ul{
+    
+    text-align: center;
+    list-style-type: none;
+    width: 80%;
+    padding-left:0;
+    margin: auto;
+    margin-top: 2em;
+        
+}
+
+
+.img-zoom-container{
+    
+    width: 75%;
+    height: 95%;
+    box-shadow: 0 0 1px 1px #000;
+    border-radius: 50px 50px;
+    background-color: white;
+    position: absolute;
+    left: 8em;
+    margin: 1%;
+    cursor: default;
+    
+}
+
+.img-big-opacity{
+    
+    width: 90%;
+    height: 90%;
+    opacity: .99;
+    
+    border-radius: 15px 15px;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    opacity: .2 ;
+    
+}
+
+.img-low-opacity{
+    
+    width: 90%;
+    height: 90%;
+    opacity: .99;
+    
+    border-radius: 15px 15px;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    opacity: .5;
+    
+}
+
+.img-no-opacity{
+    
+    width: 90%;
+    height: 90%;
+    opacity: .99;
+    
+    border-radius: 15px 15px;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    
+}
+
